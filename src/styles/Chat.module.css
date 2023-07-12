@@ -1,0 +1,102 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    height: 100vh;
+    width: 100vw;
+    background-color: #ff073a;
+    color: #FFFFFF;
+}
+
+.welcomecon {
+    display: flex;
+    padding: 10rem;
+    background-color: #ff073a;
+    color: #FFFFFF;
+    height: 100vh;
+    width: 100vw;
+    font-size: larger;
+    font-weight: 500;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: justify;
+}
+
+
+.chatWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.chatContainer {
+    width: 100%;
+    min-height: 50vh;
+    max-height: 80vh;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 0;
+    font-size: 1rem;
+    background: #E9E9E9;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.submit {
+    background: #E9E9E9;
+    border: 1px #ffffff solid;
+    display: flex;
+    padding: 1rem;
+    border-radius: none;
+    font-size: 1rem;
+    transition-duration: .15s;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.submit:hover {
+    background: #E9E9E9;
+    cursor: pointer;
+}
+
+.chatMessageList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: #E9E9E9;
+}
+
+.chatMessageList :global .scrollbar-container {
+    height: auto;
+}
+
+.inputContainerButton {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 900;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align: center;
+}
+
+.start {
+    width: 10px;
+    background-color: green;
+    padding: 5px;
+}
