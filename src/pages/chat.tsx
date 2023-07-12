@@ -112,7 +112,7 @@ export default function Chat() {
                             <MessageList className={styles.chatMessageList}
                                 typingIndicator={waitingForResponse && <TypingIndicator content="ChatGPT is thinking" style={{ background: '#E9E9E9' }} />}>
                                 {
-                                    messages.map((message) => {
+                                    messages.map((message,index) => {
                                         return (
                                             <Message
                                                 model={{
@@ -123,6 +123,7 @@ export default function Chat() {
                                                     position: 'normal',
                                                     type: 'text',
                                                 }}
+                                                key={index}
                                             />
                                         )
                                     })
